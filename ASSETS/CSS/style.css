@@ -1,0 +1,135 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../IMG/header.jpg);
+    height: 400px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40pt;
+    justify-content: center;
+    align-content: center;
+    color: #000000;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: space-around;
+    background-color: #b9b9b9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+    border-right: 1px solid #bbb;
+}
+
+nav a {
+    font-size: 1.5em;
+    columns: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+input {
+    border-radius: 30px;
+    padding: 3px;
+    text-align: center;
+}
+
+#article {
+    width: 1200px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding: 15px;
+    margin: 15px;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+
+
+#artImages
+{
+ display: flex;
+}
+
+img
+{
+    height: 300px;
+    width: 500px;
+}
+
+h3 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+    margin: 15px;
+}
+
+.paragraphs
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    text-align: justify;
+    padding: 10px;
+    margin: 15px;
+    background-color: burlywood;
+    border-radius: 5px;
+}
+
+#iconburger
+{
+    display: none;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(-30px);
+
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
+@media screen and (max-width: 480px)
+{
+    header{
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: medium;
+    }
+
+    #iconburger{
+        display: block;
+        align-content: center;
+    }
+    
+    nav ul li a{
+        display: none;
+    }
+    
+    #article{
+        width: auto;
+    }
+
+    #artImages{
+        display: flex;
+        flex-direction: column;
+    }
+}
